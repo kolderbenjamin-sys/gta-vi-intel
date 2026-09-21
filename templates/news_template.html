@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/templates/fonts/anton.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/templates/fonts/rajdhani-500.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/templates/fonts/rajdhani-600.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/templates/fonts/rajdhani-700.woff2') format('woff2');
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 1080px;
+    height: 1350px;
+    overflow: hidden;
+    background: #0a0a12;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .canvas {
+    position: relative;
+    width: 1080px;
+    height: 1350px;
+  }
+
+  .bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(1.15) contrast(1.05);
+  }
+
+  .scrim-top {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 420px;
+    background: linear-gradient(180deg, rgba(10,10,18,0.75) 0%, rgba(10,10,18,0) 100%);
+  }
+
+  .scrim-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 780px;
+    background: linear-gradient(180deg, rgba(10,10,18,0) 0%, rgba(10,10,18,0.55) 30%, rgba(10,10,18,0.97) 78%, #0a0a12 100%);
+  }
+
+  .brand {
+    position: absolute;
+    top: 56px; left: 56px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand-dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff2d8a, #00e5ff);
+    box-shadow: 0 0 18px rgba(255,45,138,0.8);
+  }
+
+  .brand-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: lowercase;
+  }
+  .brand-name span { color: #00e5ff; }
+
+  .tag {
+    position: absolute;
+    top: 56px; right: 56px;
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #0a0a12;
+    background: linear-gradient(90deg, #ff2d8a, #ff7a45);
+    text-transform: uppercase;
+  }
+  .tag.cyan { background: linear-gradient(90deg, #00e5ff, #4dd0ff); }
+  .tag.yellow { background: linear-gradient(90deg, #ffe14d, #ffb347); }
+
+  .content {
+    position: absolute;
+    left: 56px; right: 56px;
+    bottom: 90px;
+  }
+
+  .kicker {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #00e5ff;
+    margin-bottom: 18px;
+  }
+
+  .headline {
+    font-family: 'Anton', sans-serif;
+    font-size: 76px;
+    line-height: 1.04;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+    max-width: 960px;
+  }
+
+  .subtext {
+    margin-top: 26px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.35;
+    color: #d8d8e2;
+    max-width: 900px;
+  }
+
+  .footer-line {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .footer-rule {
+    height: 3px;
+    width: 70px;
+    background: linear-gradient(90deg, #ff2d8a, #00e5ff);
+  }
+
+  .footer-text {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #8a8a9a;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <img class="bg" src="{{BG_IMAGE}}">
+    <div class="scrim-top"></div>
+    <div class="scrim-bottom"></div>
+
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <div class="brand-name">gta.vi<span>.intel</span></div>
+    </div>
+
+    <div class="tag {{TAG_COLOR}}">{{TAG}}</div>
+
+    <div class="content">
+      <div class="kicker">{{KICKER}}</div>
+      <div class="headline">{{HEADLINE}}</div>
+      <div class="subtext">{{SUBTEXT}}</div>
+      <div class="footer-line">
+        <div class="footer-rule"></div>
+        <div class="footer-text">{{FOOTER}}</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

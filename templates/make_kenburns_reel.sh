@@ -1,0 +1,12 @@
+#!/bin/bash
+# Usage: ./make_kenburns_reel.sh <input.png> <output.mp4> [duration_seconds]
+set -e
+cd "$(dirname "$0")/.."
+IN="$1"
+OUT="$2"
+DUR="${3:-8}"
+ffmpeg -y -loop 1 -i "$IN" \
+  -vf "scale=1080:1350,zoompan=z='min(zoom+0.0004,1.07)':d=200:s=1080x1350:fps=25" \
+  -t "$DUR" -pix_fmt yuv420p -c:v libx264 -crf 20 \
+  "$OUT" 2>&1 | tail -3
+echo "$OUT"
