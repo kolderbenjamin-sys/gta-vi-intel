@@ -1,10 +1,10 @@
 {
-  "bg_image": "C:/Users/Benjamin/Claude-Workspace/GTA VI/assets/stills/15_still.jpg",
+  "bg_image": "assets/stills/15_still.jpg",
   "tag": "COLLECTOR",
   "tag_color": "pink",
   "kicker": "GEAR WATCH",
   "headline": "SONY DROPS A GTA 6 DUALSENSE",
   "subtext": "Limited-edition controller revealed September 10. Would you cop it for launch day?",
-  "footer": "SOURCE: PLAYSTATION \u00b7 GTA.VI.INTEL",
-  "out": "C:/Users/Benjamin/Claude-Workspace/GTA VI/output/graphics/post_dualsense.html"
+  "footer": "SOURCE: PLAYSTATION · GTA.VI.INTEL",
+  "out": "output/graphics/post_dualsense.html"
 }
