@@ -1,4 +1,5 @@
 {
+  "template": "reel",
   "bg_image": "assets/stills/10_still.jpg",
   "tag": "48M",
   "tag_color": "yellow",
@@ -6,5 +7,5 @@
   "headline": "GTA 6 COULD SELL 48M AT LAUNCH",
   "subtext": "Piper Sandler just raised its projection. That would make it the biggest entertainment launch ever - before day one even ends.",
   "footer": "SOURCE: PIPER SANDLER · GTA.VI.INTEL",
-  "out": "output/graphics/post_sales.html"
+  "out": "output/graphics/post_sales_reel.html"
 }

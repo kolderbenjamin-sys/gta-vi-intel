@@ -1,4 +1,5 @@
 {
+  "template": "reel",
   "bg_image": "assets/stills/30_still.jpg",
   "tag": "TRAILER 2",
   "tag_color": "pink",
@@ -6,5 +7,5 @@
   "headline": "JASON, LUCIA AND VICE CITY IN 4K",
   "subtext": "Captured entirely in-engine on PS5. 21M+ views and counting. Phil Cassidy's Ammu-Nation is back.",
   "footer": "REWATCH ON ROCKSTAR NEWSWIRE · GTA.VI.INTEL",
-  "out": "output/graphics/post_trailer2.html"
+  "out": "output/graphics/post_trailer2_reel.html"
 }

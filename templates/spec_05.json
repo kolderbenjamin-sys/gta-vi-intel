@@ -1,4 +1,5 @@
 {
+  "template": "reel",
   "bg_image": "assets/stills/39_still.jpg",
   "tag": "CONFIRMED",
   "tag_color": "cyan",
@@ -6,5 +7,5 @@
   "headline": "GTA ONLINE ISN'T GOING ANYWHERE",
   "subtext": "Take-Two confirms GTA Online keeps running after Nov 19 - and PC gaming is becoming 'more important' to the business.",
   "footer": "SOURCE: TAKE-TWO · GTA.VI.INTEL",
-  "out": "output/graphics/post_online.html"
+  "out": "output/graphics/post_online_reel.html"
 }
