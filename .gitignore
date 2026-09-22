@@ -1,5 +1,8 @@
 output/
-.claude/
+.claude/*
+!.claude/settings.json
+!.claude/hooks/
+!.claude/hooks/*
 *.log
 u*.json
 rt2.json
