@@ -1,0 +1,11 @@
+{
+  "template": "feed",
+  "bg_image": "assets/stills/02_still.jpg",
+  "tag": "CONCEPT",
+  "tag_color": "cyan",
+  "kicker": "FAN VISUALIZATION",
+  "headline": "NEON DOWNTOWN VICE CITY",
+  "subtext": "Rain-soaked streets, cruising nights. GTA 6 energy — not official footage.",
+  "footer": "SAVE THIS · GTA.VI.INTEL",
+  "out": "output/graphics/post_neon_downtown.html"
+}

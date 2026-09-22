@@ -1,0 +1,11 @@
+{
+  "template": "reel",
+  "bg_image": "assets/stills/15_still.jpg",
+  "tag": "CONCEPT",
+  "tag_color": "pink",
+  "kicker": "FAN VISUALIZATION",
+  "headline": "LATE-NIGHT CAR MEET",
+  "subtext": "Lowriders bouncing, tire smoke, neon skyline. Not official footage.",
+  "footer": "GTA.VI.INTEL",
+  "out": "output/graphics/story_car_meet.html"
+}
